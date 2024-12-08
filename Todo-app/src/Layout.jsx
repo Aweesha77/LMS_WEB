@@ -1,4 +1,3 @@
-// Layout.js
 import SideBar from './SideBar';
 import Home from './Home';
 
