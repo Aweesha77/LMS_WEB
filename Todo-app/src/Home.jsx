@@ -4,16 +4,17 @@ import Footer from './Footer';
 
 const Home = () => {
     return (
-        <div className="flex-1 p-4">
+        <div>
             {/* Top Section with Logo, Name, and Login Button */}
-            <div className="flex items-center justify-between mb-8">
+            <div className="flex items-center justify-between mb-6">
                 <div className="flex items-center">
-                    <img src="path/to/logo.png" alt="Logo" className="h-10 w-10" style={{ marginRight: '300px' }} /> {/* Logo with 30px gap */}
+                    <img src={tree2} alt="Logo" className="h-14 w-14" alt="Logo" style={{ marginRight: '300px' }} /> {/* Logo with 30px gap */}
                     <h1 className="text-2xl font-serif font-bold text-center flex-1">IDEAL Institute Of Higher Education</h1> {/* Centered Name with Serif Font and Bigger Size */}
                 </div>
                 <a 
                     href="#login" 
-                    className="border border-blue-500 text-blue-500 hover:bg-blue-500 hover:text-white px-4 py-2 rounded transition" 
+                    style={{ borderColor: '#3E737A', color: '#3E737A' }} // Change border and text color
+                    className="border hover:bg-[#5f979e] hover:bg-[#5f979e] px-4 py-2 rounded transition" 
                 >
                     Login
                 </a> {/* Login Button with Border */}
@@ -21,8 +22,6 @@ const Home = () => {
 
             <Content/>
             <Footer/>
-
-            
         </div>
     );
 };

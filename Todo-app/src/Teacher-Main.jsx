@@ -3,6 +3,7 @@ import React from 'react';
 import { Link } from 'react-router-dom'; // Import Link for navigation
 import Footer from './Footer';
 import tree1 from './Asserts/images.jpeg'; // Adjust the path as necessary
+import tree2 from './Asserts/logo.jpeg'; 
 
 
 const TeachMain = () => {

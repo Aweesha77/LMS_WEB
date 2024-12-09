@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 const SideBar = () => {
     return (
-        <nav className="w-64 bg-blue-600 shadow-md h-screen-full flex flex-col items-center p-4">
+        <nav style={{ backgroundColor: '#3E737A' }} className="w-64 bg-teal-500 shadow-md h-screen-full flex flex-col items-center p-4">
             <h1 className="text-xl font-bold mb-4 text-center"></h1>
             <ul className="flex flex-col items-center mt-10">
                 <li className="mb-8">

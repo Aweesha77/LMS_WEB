@@ -4,7 +4,7 @@ import Home from './Home';
 
 const Layout = () => {
     return (
-        <div className="flex">
+        <div>
             {/* Left Sidebar */}
             <SideBar />
 

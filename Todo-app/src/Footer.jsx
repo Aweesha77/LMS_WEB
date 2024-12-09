@@ -2,7 +2,7 @@ import React from 'react';
 
 const Footer = () => {
     return (
-        <footer className="bg-blue-600 text-white p-4 mt-8 w-full"> {/* Changed w-screen-full to w-full */}
+        <footer style={{ backgroundColor: '#3E737A' }} className=" text-white p-4 mt-8 w-full"> {/* Changed w-screen-full to w-full */}
             <div className="flex flex-col md:flex-row justify-between items-center">
                 <div className="mb-4 md:mb-0">
                     <h3 className="font-bold text-lg">Follow Us</h3>
