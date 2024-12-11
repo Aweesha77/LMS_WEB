@@ -20,13 +20,12 @@ const PhyTeach = () => {
                     <img src={tree2} alt="Logo" className="h-14 w-14" style={{ marginRight: '300px' }} />
                     <h1 className="text-2xl font-serif font-bold text-center flex-1">IDEAL Institute Of Higher Education</h1>
                 </div>
-                <a 
-                    href="#login" 
-                    style={{ backgroundColor: 'white', border: '2px solid #3E737A' }} // White background and border color
-                    className="text-[#3E737A] hover:bg-[#3E737A] hover:text-black px-4 py-2 rounded transition" 
+                <button 
+                    onClick={() => window.location.href = "https://accounts.google.com/"} // Redirect to Google login page
+                    className="bg-[#3E737A] text-white px-10 py-3 rounded hover:bg-[#4AB8B0] transition" // Set styles
                 >
                     Login
-                </a>
+                </button>
             </div>
 
             <div className="bg-gray-200 min-h-[500px] w-full flex items-center justify-center"> {/* Grey background with min height of 500px, centered */}

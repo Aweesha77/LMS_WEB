@@ -7,9 +7,9 @@ const SideBar = () => {
         <nav style={{ backgroundColor: '#3E737A' }} className="w-64 bg-teal-500 shadow-md h-screen-full flex flex-col items-center p-4">
             <h1 className="text-xl font-bold mb-4 text-center">   </h1>
             <ul className="flex flex-col items-center mt-10">
-                <li className="mb-8">
-                    <Link to="/home" className="block w-full py-4 px-20 text-gray-700 bg-gray-200 rounded hover:bg-gray-400 hover:text-white transition">
-                        Home<span className="text-gray-800 hover:text-white">--</span>
+            <li className="mb-6"> {/* Reduced bottom margin */}
+                    <Link to="/home" className="block w-full py-3 px-24 text-gray-700 bg-gray-200 rounded hover:bg-gray-400 hover:text-white transition"> {/* Increased padding for width */}
+                        Home {/* Removed the -- */}
                     </Link>
                 </li>
                 <li className="mb-8">

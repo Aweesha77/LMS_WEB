@@ -15,19 +15,18 @@ const SubMain = () => {
                     <img src={tree2} alt="Logo" className="h-14 w-14" style={{ marginRight: '300px' }} />
                     <h1 className="text-2xl font-serif font-bold text-center flex-1">IDEAL Institute Of Higher Education</h1>
                 </div>
-                <a 
-                    href="#login" 
-                    style={{ backgroundColor: 'white', border: '2px solid #3E737A' }} // White background and border color
-                    className="text-[#3E737A] hover:bg-[#3E737A] hover:text-black px-4 py-2 rounded transition" 
+                <button 
+                    onClick={() => window.location.href = "https://accounts.google.com/"} // Redirect to Google login page
+                    className="bg-[#3E737A] text-white px-10 py-3 rounded hover:bg-[#4AB8B0] transition" // Set styles
                 >
                     Login
-                </a>
+                </button>
             </div>
 
             <div className="bg-gray-200 min-h-[500px] w-full flex items-center justify-center">
                 <div className="flex flex-col items-center">
                     <h3 className="text-3xl font-serif mb-16">Select the Subject</h3>
-                    <div className="grid grid-cols-3 gap-24 p-4">
+                    <div className="grid grid-cols-3 gap-20 p-4">
                         <Link to="/physicsteachers" style={{ backgroundColor: '#3E737A' }} className="text-white px-16 py-4 rounded hover:bg-blue-700 transition text-center">
                             Physics
                         </Link>

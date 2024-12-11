@@ -1,18 +1,20 @@
-// Dashboard.js
+// Content.js
 import React from 'react';
-import tree1 from './Asserts/images.jpeg'; // Adjust the path as necessary
-import tree2 from './Asserts/images.jpeg'; // Adjust the path as necessary
-import tree3 from './Asserts/images.jpeg'; // Adjust the path as necessary
+import { Link } from 'react-router-dom'; // Import Link for navigation
+
+import inst1 from './Asserts/inst1.jpeg'; 
+import inst2 from './Asserts/inst2.jpeg'; 
+import inst3 from './Asserts/inst3.jpeg'; 
 
 const Content = () => {
     return (
         <div className="bg-gray-200 min-h-screen w-full"> {/* Grey background with full height and full width */}
             <div className="p-0 md:p-2"> {/* Removed left and right padding for small screens, kept for medium and larger screens */}
                 {/* Tree Images Section with responsive gap */}
-                <div className="flex flex-wrap justify-center mt-12 mb-12 space-x-4 md:space-x-20 lg:space-x-18"> {/* Responsive space between images */}
-                    <img src={tree1} alt="Tree 1" className="h-34 w-34 md:h-34 md:w-34 lg:h-34 lg:w-34" />
-                    <img src={tree2} alt="Tree 2" className="h-34 w-34 md:h-34 md:w-34 lg:h-34 lg:w-34" />
-                    <img src={tree3} alt="Tree 3" className="h-34 w-34 md:h-34 md:w-34 lg:h-34 lg:w-34" />
+                <div className="flex flex-wrap justify-center mt-12 mb-12 space-x-4 md:space-x-20 lg:space-x-18"> 
+                    <img src={inst3} alt="Institute 3" className="h-34 w-34 md:h-34 md:w-34 lg:h-34 lg:w-34" />
+                    <img src={inst2} alt="Institute 2" className="h-34 w-34 md:h-34 md:w-34 lg:h-34 lg:w-34" />
+                    <img src={inst1} alt="Institute 1" className="h-34 w-34 md:h-34 md:w-34 lg:h-34 lg:w-34" />
                 </div>
 
                 {/* Main Content Area */}
@@ -28,12 +30,23 @@ const Content = () => {
 
                     {/* Button Section */}
                     <div className="flex justify-center mt-8 space-x-16"> {/* Increased margin-top and space between buttons */}
-                        <button className="bg-blue-600 text-white px-10 py-3 rounded hover:bg-blue-700">Enroll Now</button>
-                        <button className="bg-green-500 text-white px-10 py-3 rounded hover:bg-green-600">Learn More</button>
+                        <a 
+                            href="mailto:sass.thari@gmail.com?subject=Request for Enrollment" // Mailto link for email
+                            className="bg-[#3E737A] text-white px-10 py-3 rounded hover:bg-[#4AB8B0]" // Lighter shade for hover
+                        >
+                            Enroll Now
+                        </a>
+                        <Link to="/institute"> {/* Link to the institute page */}
+                            <button 
+                                className="bg-[#3E737A] text-white px-10 py-3 rounded hover:bg-[#4AB8B0]" // Lighter shade for hover
+                            >
+                                Learn More
+                            </button>
+                        </Link>
                     </div>
 
                     <h2 className="mt-6 text-1xl md:text-3xl font-serif font-bold">Who Are We</h2> {/* Responsive text size */}
-                    <p className="mt-6 text-sm md:text-base"> {/* Responsive text size */}
+                    <p className="mt-6 text-sm md:text-base mb-0"> {/* Responsive text size, remove bottom margin */}
                         At IDEAL Institute of Higher Education in Bandarawela, we are dedicated to guiding Advanced Level (A/L) 
                         students towards academic excellence. With three branches—our main 
                         branch in Bandarawela, along with centers in Badulla and the 
@@ -45,11 +58,9 @@ const Content = () => {
                         and engaging learning environment to help students achieve their 
                         highest potential in A/L exams.
                     </p>
-
                 </div>
             </div>
         </div>
-        
     );
 };
 
