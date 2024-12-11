@@ -16,7 +16,7 @@ const SubMain = () => {
                     <h1 className="text-2xl font-serif font-bold text-center flex-1">IDEAL Institute Of Higher Education</h1>
                 </div>
                 <button 
-                    onClick={() => window.location.href = "https://accounts.google.com/"} // Redirect to Google login page
+                    onClick={() => window.location.href = "https://shilpa-lms-project.vercel.app/"} // Redirect to Google login page
                     className="bg-[#3E737A] text-white px-10 py-3 rounded hover:bg-[#4AB8B0] transition" // Set styles
                 >
                     Login
