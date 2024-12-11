@@ -2,7 +2,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom'; // Import Link for navigation
 import Footer from './Footer';
-import tree2 from './Asserts/logo.jpeg'; // Adjust the path as necessary
+import tree2 from './Asserts/logo.jpeg'; 
+
+
 
 const SubMain = () => {
     return (
@@ -15,7 +17,8 @@ const SubMain = () => {
                 </div>
                 <a 
                     href="#login" 
-                    className="border border-blue-500 text-blue-500 hover:bg-blue-500 hover:text-white px-4 py-2 rounded transition" 
+                    style={{ backgroundColor: 'white', border: '2px solid #3E737A' }} // White background and border color
+                    className="text-[#3E737A] hover:bg-[#3E737A] hover:text-black px-4 py-2 rounded transition" 
                 >
                     Login
                 </a>
@@ -25,23 +28,23 @@ const SubMain = () => {
                 <div className="flex flex-col items-center">
                     <h3 className="text-3xl font-serif mb-16">Select the Subject</h3>
                     <div className="grid grid-cols-3 gap-24 p-4">
-                        <Link to="/physicsteachers" className="bg-blue-600 text-white px-16 py-4 rounded hover:bg-blue-700 transition text-center">
+                        <Link to="/physicsteachers" style={{ backgroundColor: '#3E737A' }} className="text-white px-16 py-4 rounded hover:bg-blue-700 transition text-center">
                             Physics
                         </Link>
-                        <Link to="/chemistryteachers" className="bg-blue-600 text-white px-16 py-4 rounded hover:bg-blue-700 transition text-center">
+                        <Link to="/chemistryteachers" style={{ backgroundColor: '#3E737A' }} className="text-white px-16 py-4 rounded hover:bg-blue-700 transition text-center">
                             Chemistry
                         </Link>
-                        <Link to="/biologyteachers" className="bg-blue-600 text-white px-16 py-4 rounded hover:bg-blue-700 transition text-center">
+                        <Link to="/biologyteachers" style={{ backgroundColor: '#3E737A' }} className="text-white px-16 py-4 rounded hover:bg-blue-700 transition text-center">
                             Biology
                         </Link>
-                        <Link to="/iconteachers" className="bg-blue-600 text-white px-16 py-4 rounded hover:bg-blue-700 transition text-center">
-                            Icon
+                        <Link to="/mathsteachers" style={{ backgroundColor: '#3E737A' }} className="text-white px-16 py-4 rounded hover:bg-blue-700 transition text-center">
+                            Mathematics
                         </Link>
-                        <Link to="/ictteachers" className="bg-blue-600 text-white px-16 py-4 rounded hover:bg-blue-700 transition text-center">
+                        <Link to="/ictteachers" style={{ backgroundColor: '#3E737A' }} className="text-white px-16 py-4 rounded hover:bg-blue-700 transition text-center">
                             ICT
                         </Link>
-                        <Link to="/sinhalateachers" className="bg-blue-600 text-white px-16 py-4 rounded hover:bg-blue-700 transition text-center">
-                            Sinhala
+                        <Link to="/agriteachers" style={{ backgroundColor: '#3E737A' }} className="text-white px-16 py-4 rounded hover:bg-blue-700 transition text-center">
+                            Agriculture
                         </Link>
                     </div>
                 </div>

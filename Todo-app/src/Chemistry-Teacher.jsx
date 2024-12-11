@@ -4,6 +4,10 @@ import Footer from './Footer'; // Ensure you have a Footer component
 import tree1 from './Asserts/images.jpeg'; // Adjust the path as necessary
 import tree2 from './Asserts/logo.jpeg'; // Adjust the path as necessary
 
+import chem1 from './Asserts/chem1.jpeg'; 
+import chem2 from './Asserts/chen2.jpeg'; 
+import math2 from './Asserts/math2.jpeg'; 
+
 
 const ChemTeach = () => {
     return (
@@ -16,7 +20,8 @@ const ChemTeach = () => {
                 </div>
                 <a 
                     href="#login" 
-                    className="border border-blue-500 text-blue-500 hover:bg-blue-500 hover:text-white px-4 py-2 rounded transition" 
+                    style={{ backgroundColor: 'white', border: '2px solid #3E737A' }} // White background and border color
+                    className="text-[#3E737A] hover:bg-[#3E737A] hover:text-black px-4 py-2 rounded transition" 
                 >
                     Login
                 </a>
@@ -28,19 +33,20 @@ const ChemTeach = () => {
                     <div className="grid grid-cols-3 gap-24 p-4"> {/* Create a grid with 3 columns and spacing */}
                         {/* Images with names and subjects */}
                         <div className="flex flex-col items-center">
-                        <img src={tree1} alt="Tree 1" alt="Biology Teacher" className="h-40 w-40 object-cover mb-2" />                            
-                        <span className="text-lg font-semibold">IDEAL Insitute of Higher Education</span>
-                        <span className="text-lg ">Bandarawela</span>
+                        <img src={chem1} alt="Tree 1" alt="Biology Teacher" className="h-40 w-40 object-cover mb-2" />                            
+                        <span className="text-lg font-semibold">Gihan S. Pitigala</span>
+                        <span className="text-lg ">Bandarawela-Saturday & Tuesday</span>
+
                         </div>
                         <div className="flex flex-col items-center">
-                        <img src={tree1} alt="Tree 1" alt="Biology Teacher" className="h-40 w-40 object-cover mb-2" />     
-                        <span className="text-lg font-semibold">IDEAL Insitute of Higher Education</span>
-                        <span className="text-lg ">Waliwada</span>
+                        <img src={chem2} alt="Tree 1" alt="Biology Teacher" className="h-40 w-40 object-cover mb-2" />     
+                        <span className="text-lg font-semibold">Lakshitha  Amarasooriya</span>
+                        <span className="text-lg ">Waliwada-Wednesday</span>
                         </div>
                         <div className="flex flex-col items-center">
-                        <img src={tree1} alt="Tree 1" alt="Biology Teacher" className="h-40 w-40 object-cover mb-2" />                            
-                        <span className="text-lg font-semibold">IDEAL Insitute of Higher Education</span>
-                        <span className="text-lg ">Badulla</span>
+                        <img src={math2} alt="Tree 1" alt="Biology Teacher" className="h-40 w-40 object-cover mb-2" />                            
+                        <span className="text-lg font-semibold">Thusith</span>
+                        <span className="text-lg ">Badulla-Tuesday & Friday</span>
                         </div>
                         
                     </div>

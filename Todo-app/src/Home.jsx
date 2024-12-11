@@ -1,23 +1,24 @@
 import React from 'react';
 import Content from './Content';
 import Footer from './Footer';
+import tree2 from './Asserts/logo.jpeg';
 
 const Home = () => {
     return (
-        <div>
+        <div className="flex-1 p-4">
             {/* Top Section with Logo, Name, and Login Button */}
-            <div className="flex items-center justify-between mb-6">
+            <div className="flex items-center justify-between mb-8">
                 <div className="flex items-center">
-                    <img src={tree2} alt="Logo" className="h-14 w-14" alt="Logo" style={{ marginRight: '300px' }} /> {/* Logo with 30px gap */}
-                    <h1 className="text-2xl font-serif font-bold text-center flex-1">IDEAL Institute Of Higher Education</h1> {/* Centered Name with Serif Font and Bigger Size */}
+                    <img src={tree2} alt="Logo" className="h-14 w-14" style={{ marginRight: '300px' }} />
+                    <h1 className="text-2xl font-serif font-bold text-center flex-1">IDEAL Institute Of Higher Education</h1>
                 </div>
                 <a 
                     href="#login" 
-                    style={{ borderColor: '#3E737A', color: '#3E737A' }} // Change border and text color
-                    className="border hover:bg-[#5f979e] hover:bg-[#5f979e] px-4 py-2 rounded transition" 
+                    style={{ backgroundColor: 'white', border: '2px solid #3E737A' }} // White background and border color
+                    className="text-[#3E737A] hover:bg-[#3E737A] hover:text-black px-4 py-2 rounded transition" 
                 >
                     Login
-                </a> {/* Login Button with Border */}
+                </a>
             </div>
 
             <Content/>
